@@ -2,6 +2,7 @@ import { fetchCars } from "../../Utils";
 import { HomeProps } from "../../Types";
 import { fuels, yearsOfProduction } from "../../Constants";
 import { CarCard, ShowMore, SearchBar, CustomFilter, Hero } from "../../Components";
+import Heading from "../../Components/Heading";
 
 export default async function Home({ searchParams }: HomeProps) {
   const allCars = await fetchCars({
@@ -19,8 +20,8 @@ export default async function Home({ searchParams }: HomeProps) {
       <Hero />
 
       <div className='mt-12 padding-x padding-y max-width' id='discover'>
-       
 
+        <Heading/>
         <div className='home__filters'>
           <SearchBar />
 
