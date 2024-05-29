@@ -16,11 +16,19 @@ const Navbar = () => {
                 />
 
             </Link>
+            <div className="flex gap-4 items-center">
+              <div className="hidden md:flex gap-3 ">
+              <a href="" className=" text-gray-500 hover:text-black">Services</a>            
+              <a href="" className=" text-gray-500 hover:text-black">About us</a>            
+              <a href="" className=" text-gray-500 hover:text-black">Help</a>            
+            </div>
             <CustomButton
             title="sign in"
             btnType = "button"
-            containerStyles="text-primary-blue rounded-full bg-white min-w-[130px]"
+            containerStyles="text-white bg-blue-500 rounded-full  min-w-[130px]"
             />
+            </div>
+            
         </nav>
       
     </header>
